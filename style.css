@@ -1,0 +1,143 @@
+
+.work-sans-font{
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.display{
+    display: flex;
+}
+.navbar{
+    justify-content: space-between;
+    align-items: center;
+}
+/* dark02 */
+.text-grey{
+    color: #424242;
+}
+.brand-name{
+    font-weight: 700;
+    font-size: 3rem;
+}
+/* dark03 */
+.text-light-grey{
+    color: #727272;
+}
+.nav-items{
+ list-style: none;
+margin-right: 50px;
+
+}
+.nav-link{
+     text-decoration: none;
+     font-weight: 500;
+}
+.bg-color{
+    background-color: rgba(255,144,14,0.1) 
+}
+.navbar , .banner{
+    max-width: 1440px;
+    margin: 0 auto;
+   
+}
+.btn-primary{
+    background-color: #FF900E;
+    color: white;
+    padding: 20px 25px;
+    font-size: 1.25rem;
+    font-weight: 600;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+.banner-content{
+    margin: 0 auto;
+    max-width: 850px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+.banner-title{
+    font-size:4rem ;
+    font-weight: 700;
+}
+.banner-img{
+    width: 100%;
+}
+
+
+main{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+main > section {
+    margin-top: 130px;
+} 
+.teams{
+    align-items: center;
+
+}
+.team-img-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 24px;
+}
+.our-features{
+    margin-left: 130px;
+    max-width: 530px;
+}
+.team-title{
+    font-size: 2.8rem;
+    font-weight: 700;
+   
+}
+.team-subtitle{
+    font-size: 1.25rem;
+}
+#quick{
+    font-weight: 500;
+}
+#Features{
+    color: #FF900E;
+}
+.some-facts-title{
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* for responsive */
+@media screen and (max-width: 576px) {
+  .navbar, 
+  ul, 
+  .teams {
+    flex-direction: column;
+  }
+
+  .team-img-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .our-features {
+    margin-left: 20px;
+  }
+}
+@media screen and (min-width:576px) and (max-width: 992px) {
+.teams{
+    flex-direction: column;
+}
+.our-features{
+
+    margin: 50px auto;
+}
+
+}
